@@ -41,6 +41,17 @@ android {
 
 dependencies {
 
+    val nav_version = "2.7.2"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+    //Compose ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    //Network calls
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    //Json to Kotlin object mapping
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    //Image loading
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
